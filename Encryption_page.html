@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption</title>
+    <link rel="stylesheet" href="Encryption_css.css" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Teko&display=swap" rel="stylesheet">
+
+    <script src="Encryption_js.js"> </script>
+</head>
+<body>
+    <centre>
+    <div class="heading_enc">
+        <h1 id="header1">Encryption</h1>
+    </div>
+    </centre>
+    <centre></centre>
+    <div class="container_encry">
+        <div class="text_cont">
+            <label id="text">Text</label>
+            <input id="text_input" type="text" placeholder="Enter a text!"><br></br>
+        </div>
+        <div class="key_cont">
+            <label id="key">Key</label>
+            <input id="keys" type="text" placeholder="Enter in number[0-45]"><br></br>
+        </div>
+        <div class="button_generate_clear">
+            <button onclick="get_info()"  class="glow-on-hover" id="generate">Generate ⚙</button>
+            <button onclick="clear_encry()" class="glow-on-hover" id="clear">Clear 🗑</button>
+        </div>
+        <div class="encrypted">
+            <label id="encrypted_txt">Encrypted Text</label>
+           <!-- <input type="text"  id="encrypt_1"><br></br>-->
+            <p id="encrypted_input"></p>
+            
+        </div>
+    </div>  
+    </centre>  
+    <div class="button_home">
+            <button onclick="home()" id="home_btn">⬅Home</button>
+    </div>
+    
+    
+</body>
+</html>

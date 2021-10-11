@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="stylesheet" href="decryption_css.css" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Teko&display=swap" rel="stylesheet">
+
+    <script src="Decryption_js.js">  </script>
+</head>
+<body>
+    <centre>
+    <div class="heading_dec">
+        <h1 id="header1">Decryption</h1>
+    </div>
+    </centre>
+    <centre>
+    <div class="container_decry">
+        <div class="text_cont">
+            <label id="text">Text</label>
+            <input id="text_input" type="text" placeholder="Enter a text!"><br></br>
+        </div>
+        <div class="key_cont">
+            <label id="key">Key</label>
+            <input id="keys" type="text" placeholder="Enter a number[0-45]"><br></br>
+        </div>
+        <div class="button_generate_clear">
+            <button onclick="get_info()" class="glow-on-hover" id="generate">Generate ⚙</button>
+            <button onclick="clear_decry()"class="glow-on-hover" id="clear">Clear 🗑</button>
+        </div>
+        <div class="decrypted">
+            <label id="decrypted_txt">Decrypted Text</label>
+            <!-- <input id="decrypted_input"type="text"><br></br> -->
+            <p id="decrypted_input"></p>
+        </div>
+    </div> 
+    </centre>   
+    <div class="button_home">
+            <button onclick="home()" id="home_btn">⬅Home</button>
+    </div>
+    
+    
+</body>
+</html>
